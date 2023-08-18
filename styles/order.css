@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  /* body {
+      background-image: url("Home_page_without_gradient_image3_web.webp.jpg");
+      background-size: cover;   
+  
+  } */
+  body{
+  overflow-x: hidden;
+  }
+  .background{
+      background-size: cover;
+      width: 125%;
+  }
+  
+  .logo-image{
+      position: absolute;
+      top: 0px;
+      left: 80px;
+      float: left;
+      margin: 0;
+      width: 95px;
+      height: 75px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-top: -6px;
+  }
+  .topnav {
+      background-color: #2a2a2a;
+      display: flex;
+      justify-content: space-around;
+      padding: 15px;
+      position: fixed;
+      width: 100%;
+  }
+  .nitro{
+    color: #f2f2f2;
+    text-align: center;
+    padding: 18px 16px;
+    text-decoration: none;
+    font-size: 18px; 
+    font-family: 'Futura',sans-serif;
+}
+  .gen{
+      color: #f2f2f2;
+      text-align: center;
+      padding: 18px 16px;
+      text-decoration: none;
+      font-size: 18px; 
+      font-family: 'Futura',sans-serif;
+  }
+  
+  .ordernow{
+      color: #59d24c;
+      text-align: center;
+      padding: 18px 16px;
+      text-decoration: none;
+      font-size: 18px;
+      font-family: 'Futura',sans-serif;  
+  }
+  
+  .home{
+      color: #f2f2f2;
+      text-align: center;
+      padding: 18px 16px;
+      text-decoration: none;
+      font-size: 18px; 
+      font-family: 'Futura',sans-serif;
+  }
+  .contact{
+      color: #f2f2f2;
+      text-align: center;
+      padding: 18px 16px;
+      text-decoration: none;
+      font-size: 18px; 
+      font-family: 'Futura',sans-serif;
+  }
+  .about{
+      color: #f2f2f2;
+      text-align: center;
+      padding: 18px 16px;
+      text-decoration: none;
+      font-size: 18px; 
+      font-family: 'Futura',sans-serif;
+  }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  
+  .topnav a.active {
+    color: rgb(24, 221, 21);
+  }
+  .catalog{
+    top: 70px;
+    display: flex;
+    margin-left: 150px;
+    position: absolute;
+    width: 100%;
+}
+.gen1{
+    
+    width: 600px;
+
+
+}
+.nitro1{
+    width: 600px;
+    
+}
+
+
+.gen-btn{
+    width: 300px;
+    color:rgb(219, 216, 216);
+    position: absolute;
+     bottom: 95px;
+     left: 155px;
+    background-color: transparent;
+    border: none;
+    font-family: 'Futura',sans-serif;
+    font-size: 30px;
+}
+.nitro-btn{
+    width: 300px;
+    color:rgb(219, 216, 216);
+    position: absolute;
+     bottom: 60px;
+     left: 750px;
+    background-color: transparent;
+    border: none;
+    font-family: 'Futura',sans-serif;
+    font-size: 30px;
+}
+a{
+    color: rgb(236, 235, 235);
+    text-decoration: none;
+
+}

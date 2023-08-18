@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/nitro_1.css">
+</head>
+<body>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-analytics.js";
+    import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-database.js";
+    const firebaseConfig = {
+      apiKey: "AIzaSyBInWwR-7x-FQ505N7aSbGaVUZgHRbOPh0",
+    authDomain: "nitro-4f8e6.firebaseapp.com",
+    databaseURL: "https://nitro-4f8e6-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "nitro-4f8e6",
+    storageBucket: "nitro-4f8e6.appspot.com",
+    messagingSenderId: "736268920759",
+    appId: "1:736268920759:web:5483234843cacfe997ea32",
+    measurementId: "G-CXWFNXK4H9"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+        const db = getDatabase(app);
+    {
+    document.getElementById("submit-btn").addEventListener('click',function(e){
+      
+      e.preventDefault();
+      
+
+      set(ref(db,'alpha/'+ document.getElementById("name1").value),
+      {
+        name:document.getElementById("name1").value,
+        phone:document.getElementById("phone1").value,
+        email:document.getElementById("email1").value,
+        city:document.getElementById("city1").value,
+        state:document.getElementById("state1").value
+      }
+      )
+      alert("order placed sccessful")
+    }
+    )
+  }
+  </script>
+ <div class="landing-display">
+        <div class="topnav">
+            
+            <div class="left-side--navbar">
+                <img src="images/alpha.png" class="logo-image">
+                <a href="Nitro.html" class="nitro">Nitro</a>
+                <a href="gen.html" class="gen">Gen</a>
+                
+                <a class="ordernow" href="order.html">Order Now</a>
+            </div>
+            
+            <div class="topnav-right">
+                <a href="index.html" class="home">Home</a>
+                <a href="contact.html" class="contact">Contact us</a>
+                <a href="about.html" class="about">About</a>
+            </div>
+        </div>
+      </div>
+      <div class="heading1">
+        <h2>
+            Order Your Gen scooter Now..
+        </h2>
+      </div>
+      <div class="log-container">
+        <h3>Enter Your Details here..</h3>
+        <form action="#" id="loginForm" method="POST">
+          <input type="text" id="name1" name="name" placeholder="Name" required>
+          <input type="number" id="phone1" name="phone" placeholder="Mobile no." required>
+          <input type="text" id="email1" name="email" placeholder="Email ID" required>
+          <input type="text" id="city1" name="city" placeholder="City" required>
+          <input type="text" id="state1" name="state" placeholder="State" required>
+          <input type="submit" id="submit-btn" name="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+    
+</body>
+</html>
